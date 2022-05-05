@@ -1,0 +1,5 @@
+# This file indicates the full path towards the sub-directories or files
+# that will not be synced with GitHub
+
+.ipynb_checkpoints
+__pycache__/
