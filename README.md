@@ -124,7 +124,7 @@ if device.type == 'cuda':
     print(f'\033[1mMemory Details:\t\033[0m{gpu.memoryTotal/1000:3.1f} GB '
           f'(Total)\t\t{gpu.memoryUsed/1000:3.1f} GB ({gpu.memoryUtil*100:.0f}% Used) '
           f'\t{gpu.memoryFree/1000:4.1f} GB ({100-gpu.memoryUtil*100:.0f}% Free)')
-
+```
 ___
 # Settings
 
@@ -259,6 +259,7 @@ ax.axes.get_xaxis().set_visible(False)
 ax.axes.get_yaxis().set_visible(False)
 plt.title('First Batch of Augmented Segmented Images', fontsize=20)
 plt.show()
+```
 
 ___
 # Model Training
@@ -407,3 +408,4 @@ total_time = time() - start_time
 print(f'\033[1m\nTotal computing time:\033[0m {total_time//3600:2.0f} hrs '
       f'{(total_time - total_time//3600*3600)//60:2.0f} mins '
       f'{total_time%60:2.0f} secs')
+```
